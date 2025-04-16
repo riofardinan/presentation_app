@@ -17,16 +17,37 @@ Ikuti langkah-langkah berikut untuk menjalankan project ini di lokal:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/nama-repo.git
-cd nama-repo
+git clone https://github.com/riofardinan/presentation_app.git
+cd presentation_app
+```
 
+### 2. Install Dependency
+
+```bash
 composer install
-
 npm install && npm run dev
+```
 
+### 3. Salin File .env
+
+```bash
 cp .env.example .env
+```
 
+### 4. Generate App Key
+
+```bash
 php artisan key:generate
+```
 
+### 5. Jalankan Migrasi
 
+```bash
+php artisan migrate
+```
+
+### 6. Jalankan Server Lokal
+
+```bash
+php artisan serve
 ```
