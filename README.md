@@ -6,7 +6,6 @@ Aplikasi web untuk membuat tutorial tugas menggunakan laravel 12 dan tailwind
 
 -   PHP >= 8.1
 -   Composer
--   MySQL
 -   Node.js & NPM
 -   Laravel 12
 
