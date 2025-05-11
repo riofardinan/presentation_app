@@ -133,22 +133,22 @@
                                 </div>
                         
                                 <div x-data="{ copied: false }" class="mt-4 flex items-center space-x-4">
-                                    <!-- Link Presentation -->
+                                    {{-- Link Presentation --}}
                                     <a href="{{ route('presentation', $tutorial->presentation) }}" target="_blank" class="text-sky-500 hover:text-sky-600 flex items-center cursor-pointer">Presentation</a>
                                    
                                     <span class="text-gray-300">|</span>
                                     
-                                    <!-- Link Finished -->
+                                    {{-- Link Finished --}}
                                     <a href="{{ route('finished', $tutorial->finished) }}" target="_blank" class="text-sky-500 hover:text-sky-600 flex items-center cursor-pointer">Finished</a>
                                    
                                     <span class="text-gray-300">|</span>
                                     
-                                    <!-- Link Download -->
+                                    {{-- Link Download --}}
                                     <a href="{{ route('printpdf', $tutorial->presentation)}}" class="text-sky-500 hover:text-sky-600 flex items-center cursor-pointer">
                                         Download PDF
                                     </a>
                                 
-                                    <!-- Notifikasi -->
+                                    {{-- Notifikasi --}}
                                     <div x-show="copied" x-cloak class="fixed bottom-5 right-5 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg transition-opacity duration-300">
                                         Link disalin!
                                     </div>
@@ -158,7 +158,7 @@
                         @endforeach
                     @endif
                 </div>
-                 <!-- Pagination -->
+                 {{-- Pagination --}}
                 <div class="mt-4">
                     {{ $tutorials->links('pagination::tailwind') }} 
                 </div>
